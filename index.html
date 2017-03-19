@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Result</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+
+    <h2>Result</h2>
+
+	<input type="text" name="" id="InputNumber">
+
+	<br>
+
+	<button type="button" onclick="ShowResult()">Show Result</button>
+
+	<br>
+
+	<h2 id="ShowClick"></h2>
+	
+
+
+
+		<script>
+
+		var a=document.getElementById('InputNumber')
+
+		function ShowResult(){
+		  var a=document.getElementById('InputNumber').value;
+		  var Show=document.getElementById('ShowClick')
+		    
+		    if (a<=100 ) {
+		   	    Show.innerHTML="A+";
+		   	      if(a<=90){
+		   	        Show.innerHTML="A";
+		   	          if(a<=80){
+		   	       	    Show.innerHTML="A-";
+		   	       	      if(a<=70){
+		   	       	      	Show.innerHTML="B+";
+		   	       	      	 if(a<=60){
+		   	       	      	   Show.innerHTML="B";
+		   	       	      	     if(a<=50){
+		   	       	      	       Show.innerHTML="B-";
+		   	       	      	       if(a<=40){
+		   	       	      	       	Show.innerHTML="C";
+		   	       	      	       	  if(a<=30){
+		   	       	      	       	  	 Show.innerHTML="F";
+		   	       	      	       	  }
+		   	       	      	       }
+		   	       	      	     }
+		   	       	      	 }
+		   	       	     }
+		   	        }
+		   	    }
+		    }
+
+		    else{
+		    	Show.innerHTML="Plz enter valid number ";
+		    }
+
+		}
+
+		</script>
+
+
+
+</body>
+</html>

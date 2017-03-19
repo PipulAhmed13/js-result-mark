@@ -1,0 +1,18 @@
+body	{
+	text-align: center;
+	background: seagreen;
+	font-size: 50px;
+}
+h1 {
+	font-size: 60px;
+	color: white;
+}
+input {
+
+}
+
+button {
+	padding: 30px;
+	font-size: 30px;
+	margin-top: 50px;
+}
